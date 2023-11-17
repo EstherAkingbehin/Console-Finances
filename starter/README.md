@@ -42,7 +42,7 @@ This is calculated by tracking what the total change in profits is from month to
 The code prints the analysis to the console.
 
 The following image shows the web application's appearance and functionality:
-![Screenshot of webpage](./images/screenshot.png)
+![Screenshot of webpage](images/screenshot.png)
 
 
 ## Credits
