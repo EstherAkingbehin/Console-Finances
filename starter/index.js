@@ -92,8 +92,23 @@ var totalMonths = finances.length;
 console.log(totalMonths);
 
 
-var total_P_L= 0;
-for (a=0; a< finances.length; a++){
-  total_P_L+=finances[a][1]
+var total_PL = 0;
+for (i = 0; i < finances.length; i++) {
+  total_PL += finances[i][1]
 }
-  console.log(total_P_L)
+console.log(total_PL);
+
+
+var total_changes_PL = 0;
+for (var i=1; i<finances.length; i++){
+  var current_element = finances[i][1];
+  var previous_element = finances[i - 1][1];
+  var changes_PL = current_element - previous_element;
+  total_changes_PL += changes_PL
+}
+
+
+var average_changes_PL = total_changes_PL / (totalMonths - 1)
+var average_changes_PL= average_changes_PL.toFixed(2)
+
+console.log(average_changes_PL);
